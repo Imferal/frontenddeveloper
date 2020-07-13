@@ -1,0 +1,15 @@
+p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  margin: $indent_regular 0;
+}
+
+.regular__paragraph {
+  margin: 2rem auto;
+  padding: 0 $indent_regular;
+  color: #000;
+
+  &_right {
+    text-align: right;
+  }
+}

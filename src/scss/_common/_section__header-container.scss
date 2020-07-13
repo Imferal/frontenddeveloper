@@ -1,0 +1,15 @@
+.section__header-container {
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+
+  &_right {
+    align-items: flex-end;
+  }
+}
+
+// @media screen and (min-width: 360px) {
+//   .section__header-container {
+//     padding: 0;
+//   }
+// }

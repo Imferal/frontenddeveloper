@@ -1,0 +1,35 @@
+.note__decorline {
+  opacity: 0.2;
+  position: absolute;
+
+  &_left-vertical {
+    bottom: 0.3rem;
+    height: calc(100% - 3rem);
+    border-right: 1px solid $sand;
+    width: 0.6rem;
+  }
+
+  &_right-vertical {
+    border-left: 1px solid $sand;
+    height: calc(100% - 3rem);
+    right: 0;
+    top: 0.3rem;
+    width: 0.6rem;
+  }
+
+  &_top-horizontal {
+    border-bottom: 1px solid $sand;
+    height: 0.7rem;
+    right: 0;
+    top: 0;
+    width: calc(100% - 5rem);
+  }
+
+  &_bottom-horizontal {
+    bottom: 0;
+    height: 0.7rem;
+    border-top: 1px solid $sand;
+    width: calc(100% - 5rem);
+  }
+
+}

@@ -1,0 +1,13 @@
+@import './_container';
+@import './_fieldset';
+@import './_title';
+@import './_description';
+@import './_label';
+@import './_input';
+@import './_textarea';
+@import './_wave';
+
+.form {
+  background: linear-gradient(180deg, rgba(11, 172, 172, 0.4) 0%, rgba(255, 255, 255, 0) 100%), rgba(27, 160, 152, 0.2);
+  position: relative;
+}

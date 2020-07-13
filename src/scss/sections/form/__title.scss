@@ -1,0 +1,11 @@
+.form__title {
+  font-family: 'Fira Sans Condensed', serif;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+
+  &_indent {
+    padding: 0.5em 0 1em;
+  }
+}

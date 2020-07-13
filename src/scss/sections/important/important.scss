@@ -1,0 +1,22 @@
+.important {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 481px) {
+  .important__container {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .important__container {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .important__container {
+    max-width: 70%;
+  }
+}

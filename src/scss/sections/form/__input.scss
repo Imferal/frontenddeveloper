@@ -1,0 +1,11 @@
+.form__input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #0BACAC;
+  display: block;
+  height: 1.5rem;
+  margin: 0 2rem 3rem;
+  padding: 0.4em;
+  width: calc(100% - 4rem);
+  transition-duration: 1s
+}

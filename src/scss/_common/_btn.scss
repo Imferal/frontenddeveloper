@@ -1,0 +1,90 @@
+$bubbles: ();
+$move: ();
+
+
+@for $i from 0 through 10 {
+  // $size: random(50, 120) / 100 * 1em;
+  $size: (random(70) + 50) / 100 * 1em;
+
+  // $start-x: random(-10, 110) * 1%;
+  $start-x: (random(120) - 10) * 1%;
+  // $start-y: random(80, 150) * 1%;
+  $start-y: (random(70) + 80) * 1%;
+
+  // $end-x: $start-x + random(-10, 10);
+  $end-x: $start-x + random(10) - 20;
+
+  // $end-y: random(-400, 60) * 1%;
+  $end-y: (random(460) - 400) * 1%;
+
+  $bubbles: append($bubbles,
+    radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) $start-x $start-y / #{$size} #{$size}, comma);
+
+  $move: append($move, $end-x $end-y, comma);
+}
+
+.btn {
+  border: none;
+  border-radius: 0.6rem;
+  color: white;
+  display: inline-block;
+  font-family: 'Fira Sans Condensed', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  left: 50%;
+  position: relative;
+  padding: 1rem 4rem;
+
+  transform: translate(-50%);
+  text-decoration: none;
+
+
+  &_bubble_green {
+
+
+    background-color: $wave;
+    background-repeat: no-repeat;
+
+
+    &:hover,
+    &:focus {
+      animation: bubbles-green 1.5s forwards ease-out;
+      background: $bubbles;
+      background-color: $wave;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_bubble_sky {
+
+    background-color: $sky;
+    border-radius: 0;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      animation: bubbles-sky 1.5s forwards ease-out;
+      background: $bubbles;
+      background-color: $sky;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_indent {
+    margin: 2em 0;
+  }
+}
+
+@keyframes bubbles-green {
+  100% {
+    background-position: $move;
+    box-shadow: inset 0 -6.5em 0 $sky;
+  }
+}
+
+@keyframes bubbles-sky {
+  100% {
+    background-position: $move;
+    box-shadow: inset 0 6.5em 0 $wave;
+  }
+}

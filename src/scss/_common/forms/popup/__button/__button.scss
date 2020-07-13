@@ -1,0 +1,32 @@
+// .popup__button {
+//   display: inline-block;
+//   border-radius: 1vmin;
+
+//   &::before {
+//     border-radius: 1vmin;
+//   }
+
+//   &_margin {
+//     margin: 5vh 0 4vh;
+//     font-size: 28px;
+//     width: initial;
+//   }
+// }
+
+// @media screen and (max-width: 768px),
+// screen and (max-height: 768px) {
+//   .popup__button {
+//     font-size: 20px;
+//   }
+// }
+
+// @media screen and (max-width: 480px),
+// screen and (max-height: 480px) {
+//   .popup__button {
+//     border-radius: 0;
+
+//     &::before {
+//       border-radius: 0;
+//     }
+//   }
+// }

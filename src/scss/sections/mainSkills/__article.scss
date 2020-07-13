@@ -1,0 +1,9 @@
+.mainSkills__article {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 3fr 9fr;
+  grid-template-areas:
+    ". header"
+    "logo description";
+  //   grid-gap: 1em;
+}

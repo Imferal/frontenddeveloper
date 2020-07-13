@@ -1,0 +1,90 @@
+// .welcome__waves {
+//   position: relative;
+//   z-index: 1;
+// }
+
+// .welcome__wave {
+//   position: absolute;
+//   bottom: -100vh;
+// }
+
+.welcome__wave1 {
+  bottom: 0;
+  position: absolute;
+  height: 33vh;
+  width: 100%;
+  background: url('/img/wave1.svg');
+  background-repeat: repeat-x;
+  animation: wave1 68s linear infinite;
+}
+
+.welcome__wave2 {
+  bottom: 0;
+  position: absolute;
+  height: 33vh;
+  width: 100%;
+  background: url('/img/wave2.svg');
+  background-repeat: repeat-x;
+  animation: wave2 36s linear infinite;
+}
+
+.welcome__wave3 {
+  bottom: 0;
+  position: absolute;
+  height: 32vh;
+  width: 100%;
+  background: url('/img/wave1.svg');
+  background-repeat: repeat-x;
+  animation: wave3 24s linear infinite;
+}
+
+.welcome__wave4 {
+  bottom: 0;
+  position: absolute;
+  height: 32vh;
+  width: 100%;
+  background: url('/img/wave2.svg');
+  background-repeat: repeat-x;
+  animation: wave4 18s linear infinite;
+}
+
+@keyframes wave1 {
+  0% {
+    background-position-x: 100vw;
+  }
+
+  100% {
+    background-position-x: 0;
+  }
+}
+
+@keyframes wave2 {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: 100vw;
+  }
+}
+
+@keyframes wave3 {
+  0% {
+    background-position-x: 100vw;
+  }
+
+  100% {
+    background-position-x: 0;
+  }
+}
+
+@keyframes wave4 {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+
+    background-position-x: 100vw;
+  }
+}

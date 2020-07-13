@@ -1,0 +1,18 @@
+.form__label {
+  display: block;
+  font-family: 'Fira Sans', serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+  position: absolute;
+  z-index: 1;
+  margin-top: -0.5rem;
+  margin-left: 3rem;
+  // transition-duration: 1s;
+
+  &_active {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: -1.4rem;
+    transition: 0.4s ease;
+  }
+}

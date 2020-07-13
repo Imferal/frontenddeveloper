@@ -1,0 +1,82 @@
+.form__wave {
+  bottom: 0;
+  position: absolute;
+  height: auto;
+  width: 100%;
+  z-index: 0;
+}
+
+.form__wave1 {
+  animation: wave1 48s linear infinite;
+  background: url('/img/FormWave1.svg');
+  background-size: cover;
+  top: 28%;
+}
+
+.form__wave2 {
+  animation: wave2 38s linear infinite;
+  background: url('/img/FormWave1.svg');
+  background-size: cover;
+  top: 29%;
+}
+
+//   .form__wave3 {
+//     bottom: 0;
+//     position: absolute;
+//     height: 32vh;
+//     width: 100%;
+//     background: url('/img/wave1.svg');
+//     background-repeat: repeat-x;
+//     animation: wave3 24s linear infinite;
+//   }
+
+//   .form__wave4 {
+//     bottom: 0;
+//     position: absolute;
+//     height: 32vh;
+//     width: 100%;
+//     background: url('/img/wave2.svg');
+//     background-repeat: repeat-x;
+//     animation: wave4 18s linear infinite;
+//   }
+
+@keyframes wave1 {
+  0% {
+    background-position-x: 100vw;
+  }
+
+  100% {
+    background-position-x: 0;
+  }
+}
+
+@keyframes wave2 {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: 100vw;
+  }
+}
+
+//   @keyframes wave3 {
+//     0% {
+//       background-position-x: 100vw;
+//     }
+
+//     100% {
+//       background-position-x: 0;
+//     }
+//   }
+
+//   @keyframes wave4 {
+//     0% {
+//       background-position-x: 0;
+//     }
+
+//     100% {
+
+//       background-position-x: 100vw;
+//     }
+//   }

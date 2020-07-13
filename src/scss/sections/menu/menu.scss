@@ -1,0 +1,26 @@
+@import './menu__item';
+@import './menu__list';
+@import './menu__link';
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba($sky, 0.9);
+  padding: 4rem 0 0 0;
+}
+
+@media screen and (min-width: 769px) {
+  .menu {
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    height: 3rem;
+
+  }
+}

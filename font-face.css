@@ -1,0 +1,89 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;900&family=Nunito:wght@300;400;700&display=swap'); */
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('./fonts/Nunito-SemiBold.eot');
+  src: local('☺'), url('./fonts/Nunito-SemiBold.woff') format('woff'), url('./fonts/Nunito-SemiBold.ttf') format('truetype'), url('./fonts/Nunito-SemiBold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('./fonts/Nunito-Regular.eot');
+  src: local('☺'), url('./fonts/Nunito-Regular.woff') format('woff'), url('./fonts/Nunito-Regular.ttf') format('truetype'), url('./fonts/Nunito-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('./fonts/Nunito-Light.eot');
+  src: local('☺'), url('./fonts/Nunito-Light.woff') format('woff'), url('./fonts/Nunito-Light.ttf') format('truetype'), url('./fonts/Nunito-Light.svg') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('./fonts/FiraSans-ExtraLight.eot');
+  src: local('☺'), url('./fonts/FiraSans-ExtraLight.woff') format('woff'), url('./fonts/FiraSans-ExtraLight.ttf') format('truetype'), url('./fonts/FiraSans-ExtraLight.svg') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('./fonts/FiraSans-Black.eot');
+  src: local('☺'), url('./fonts/FiraSans-Black.woff') format('woff'), url('./fonts/FiraSans-Black.ttf') format('truetype'), url('./fonts/FiraSans-Black.svg') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('./fonts/FiraSans-Medium.eot');
+  src: local('☺'), url('./fonts/FiraSans-Medium.woff') format('woff'), url('./fonts/FiraSans-Medium.ttf') format('truetype'), url('./fonts/FiraSans-Medium.svg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('./fonts/FiraSans-Regular.eot');
+  src: local('☺'), url('./fonts/FiraSans-Regular.woff') format('woff'), url('./fonts/FiraSans-Regular.ttf') format('truetype'), url('./fonts/FiraSans-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('./fonts/FiraSansCondensed-ExtraLight.eot');
+  src: local('☺'), url('./fonts/FiraSansCondensed-ExtraLight.woff') format('woff'), url('./fonts/FiraSansCondensed-ExtraLight.ttf') format('truetype'), url('./fonts/FiraSansCondensed-ExtraLight.svg') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('./fonts/FiraSansCondensed-Regular.eot');
+  src: local('☺'), url('./fonts/FiraSansCondensed-Regular.woff') format('woff'), url('./fonts/FiraSansCondensed-Regular.ttf') format('truetype'), url('./fonts/FiraSansCondensed-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('./fonts/FiraSansCondensed-Medium.eot');
+  src: local('☺'), url('./fonts/FiraSansCondensed-Medium.woff') format('woff'), url('./fonts/FiraSansCondensed-Medium.ttf') format('truetype'), url('./fonts/FiraSansCondensed-Medium.svg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('./fonts/FiraSansCondensed-Bold.eot');
+  src: local('☺'), url('./fonts/FiraSansCondensed-Bold.woff') format('woff'), url('./fonts/FiraSansCondensed-Bold.ttf') format('truetype'), url('./fonts/FiraSansCondensed-Bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
