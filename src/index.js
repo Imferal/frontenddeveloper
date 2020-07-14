@@ -36,19 +36,4 @@ var mySwiper = new Swiper ('.swiper-container', {
     type: 'bullets',
     clickable: 'true',
   },
-  //   breakpoints: {
-  //     1280: {
-  //       slidesPerView: 3,
-  //       spaceBetween: 30,
-  //     },
-
-  //     768: {
-  //       slidesPerView: 2,
-  //       spaceBetween: 30,
-  //     },
-
-  //     320: {
-  //       slidesPerView: 1,
-  //     },
-  //   },
 });

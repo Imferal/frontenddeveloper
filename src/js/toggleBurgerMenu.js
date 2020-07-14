@@ -15,17 +15,3 @@ export function toggleBurgerMenu () {
     }
   });
 }
-
-// let formFields = document.querySelectorAll ('.form__input');
-
-//   setInputStatus ();
-
-//   //   formContainer.addEventListener ('click', e => {
-//   document.addEventListener ('click', e => {
-//     setInputStatus ();
-//     if (e.target.classList.contains ('form__input')) {
-//       e.target.labels[0].classList.add ('form__label_active');
-//     } else {
-//       setInputStatus ();
-//     }
-//   });
