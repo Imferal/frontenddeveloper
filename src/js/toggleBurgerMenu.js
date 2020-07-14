@@ -3,6 +3,7 @@ export function toggleBurgerMenu () {
 
   mobileMenu.classList.toggle ('flex');
   mobileMenu.classList.toggle ('hidden');
+  document.body.classList.toggle ('disable-scroll');
 
   mobileMenu.addEventListener ('click', e => {
     if (

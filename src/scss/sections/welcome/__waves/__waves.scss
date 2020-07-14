@@ -1,19 +1,9 @@
-// .welcome__waves {
-//   position: relative;
-//   z-index: 1;
-// }
-
-// .welcome__wave {
-//   position: absolute;
-//   bottom: -100vh;
-// }
-
 .welcome__wave1 {
   bottom: 0;
   position: absolute;
   height: 33vh;
   width: 100%;
-  background: url('/img/wave1.svg');
+  background: url('./img/wave1.svg');
   background-repeat: repeat-x;
   animation: wave1 68s linear infinite;
 }
@@ -23,7 +13,7 @@
   position: absolute;
   height: 33vh;
   width: 100%;
-  background: url('/img/wave2.svg');
+  background: url('./img/wave2.svg');
   background-repeat: repeat-x;
   animation: wave2 36s linear infinite;
 }
@@ -33,7 +23,7 @@
   position: absolute;
   height: 32vh;
   width: 100%;
-  background: url('/img/wave1.svg');
+  background: url('./img/wave1.svg');
   background-repeat: repeat-x;
   animation: wave3 24s linear infinite;
 }
@@ -43,7 +33,7 @@
   position: absolute;
   height: 32vh;
   width: 100%;
-  background: url('/img/wave2.svg');
+  background: url('./img/wave2.svg');
   background-repeat: repeat-x;
   animation: wave4 18s linear infinite;
 }
