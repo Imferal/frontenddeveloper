@@ -9,10 +9,18 @@
   .fixed-container {
     width: 460px;
   }
+
+  .fixed-container.screenshot__img {
+    width: 460px;
+  }
 }
 
 @media screen and (min-width: 769px) {
   .fixed-container {
+    width: 760px;
+  }
+
+  .fixed-container.screenshot__img {
     width: 760px;
   }
 }

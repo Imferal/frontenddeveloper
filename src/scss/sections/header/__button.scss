@@ -13,14 +13,14 @@
   z-index: 3;
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 421px) {
   .header__button {
     border-radius: 0.6em;
     font-size: 1rem;
   }
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 481px) {
   .header__button {
     margin: 0 2em;
     padding: 1rem 2em;

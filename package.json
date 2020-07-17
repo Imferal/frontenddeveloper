@@ -31,7 +31,7 @@
     "websocket-extensions": "^0.1.4"
   },
   "optionalDependencies": {
-    "fsevents": "2.1.2"
+    "fsevents": "1.2.13"
   },
   "keywords": [
     "portfolio",

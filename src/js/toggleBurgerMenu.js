@@ -1,5 +1,6 @@
 export function toggleBurgerMenu () {
   const mobileMenu = document.querySelector ('.menu');
+  const formButton = document.querySelector ('.header__button');
 
   mobileMenu.classList.toggle ('flex');
   mobileMenu.classList.toggle ('hidden');
@@ -13,5 +14,10 @@ export function toggleBurgerMenu () {
       mobileMenu.classList.remove ('flex');
       mobileMenu.classList.add ('hidden');
     }
+  });
+
+  formButton.addEventListener ('click', e => {
+    mobileMenu.classList.remove ('flex');
+    mobileMenu.classList.add ('hidden');
   });
 }

@@ -1,7 +1,13 @@
 .header__phone {
   flex-shrink: 0;
   z-index: 3;
-  font-size: 1rem;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 361px) {
+  .header__phone {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 490px) {

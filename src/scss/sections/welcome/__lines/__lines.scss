@@ -19,7 +19,7 @@
 
   &_first {
     position: absolute;
-    width: 20px;
+    width: 18px;
     top: 80vh;
     height: 20vh;
     border-right: 1px solid rgba(222, 185, 146, 0.1);
@@ -43,9 +43,37 @@
 
   &_fourth {
     position: absolute;
-    width: calc(100% - 0.7rem);
+    width: calc(100% - 12px);
     top: 12vh;
     height: 80vh;
     border-right: 1px solid rgba(222, 185, 146, 0.1);
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .welcome__lines_first {
+
+    width: 20px;
+
+  }
+
+  .welcome__lines_fourth {
+
+    width: calc(100% - 14px);
+
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .welcome__lines_first {
+
+    width: 22px;
+
+  }
+
+  .welcome__lines_fourth {
+
+    width: calc(100% - 16px);
+
   }
 }

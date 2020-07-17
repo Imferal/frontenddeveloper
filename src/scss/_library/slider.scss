@@ -137,26 +137,26 @@
     //   display: inline-block;
     // }
 
-    &-description {
-      padding-top: 13px;
-    }
+    // &-description {
+    //   padding-top: 13px;
+    // }
 
     // &-pagination-bullets {
     //   margin-top: 100px;
     // }
 
     &-container-horizontal>&-pagination-bullets &-pagination-bullet {
-      margin: 0 15px;
+      margin: 0 1rem;
     }
   }
 }
 
 @media screen and (max-width: 420px) {
   .swiper {
-    &-description {
-      font-size: 18px;
-      //   margin-top: 255px;
-    }
+    // &-description {
+    // font-size: 18px;
+    //   margin-top: 255px;
+    // }
 
     &-slide {
       height: 251px;

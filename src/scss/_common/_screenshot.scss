@@ -26,50 +26,50 @@
   position: relative;
 }
 
-@media screen and (min-width: 360px) {
-  .screenshot__overlay {
-    margin: 3%;
-    box-shadow: 0px 0px 10px 0px $sky;
-  }
+// @media screen and (min-width: 360px) {
+//   .screenshot__overlay {
+//     margin: 3%;
+//     box-shadow: 0px 0px 10px 0px $sky;
+//   }
 
-  .screenshot__overlay:after {
-    background: rgba(11, 172, 172, 0.05);
-  }
-}
+//   .screenshot__overlay:after {
+//     background: rgba(11, 172, 172, 0.05);
+//   }
+// }
 
-@media screen and (min-width: 768px) {
-  .screenshot__overlay {
-    margin-left: 6%;
-    margin-right: 6%;
+// @media screen and (min-width: 768px) {
+//   .screenshot__overlay {
+//     margin-left: 6%;
+//     margin-right: 6%;
 
-  }
-}
+//   }
+// }
 
-@media screen and (min-width: 960px) {
-  .screenshot__overlay {
-    margin-left: 9%;
-    margin-right: 9%;
+// @media screen and (min-width: 960px) {
+//   .screenshot__overlay {
+//     margin-left: 9%;
+//     margin-right: 9%;
 
-  }
-}
+//   }
+// }
 
-@media screen and (min-width: 1200px) {
-  .screenshot__overlay {
-    margin-left: 12%;
-    margin-right: 12%;
-  }
-}
+// @media screen and (min-width: 1200px) {
+//   .screenshot__overlay {
+//     margin-left: 12%;
+//     margin-right: 12%;
+//   }
+// }
 
-@media screen and (min-width: 1400px) {
-  .screenshot__overlay {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-}
+// @media screen and (min-width: 1400px) {
+//   .screenshot__overlay {
+//     margin-left: 15%;
+//     margin-right: 15%;
+//   }
+// }
 
-@media screen and (min-width: 1600px) {
-  .screenshot__overlay {
-    margin-left: 18%;
-    margin-right: 18%;
-  }
-}
+// @media screen and (min-width: 1600px) {
+//   .screenshot__overlay {
+//     margin-left: 18%;
+//     margin-right: 18%;
+//   }
+// }

@@ -4,3 +4,9 @@
   font-size: 0.8rem;
   font-weight: 300;
 }
+
+@media screen and (min-width: 769px) {
+  .note__text {
+    font-size: 0.9rem;
+  }
+}

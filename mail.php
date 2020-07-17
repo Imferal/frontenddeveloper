@@ -24,7 +24,7 @@ $mail->addAddress('admin@frontenddeveloper.ru');     // Кому будет ух
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');
 //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-$mail->addAttachment($_FILES['userAttachment']['tmp_name'], $_FILES['userAttachment']['name']);    // Optional name
+// $mail->addAttachment($_FILES['userAttachment']['tmp_name'], $_FILES['userAttachment']['name']);    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заполнена форма заявки на сайте';
