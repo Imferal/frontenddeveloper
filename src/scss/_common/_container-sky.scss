@@ -2,4 +2,8 @@
   background-color: $sky;
   margin-bottom: $indent_regular;
   position: relative;
+
+  &__thank-you {
+    margin-bottom: 0;
+  }
 }

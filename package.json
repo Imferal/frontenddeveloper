@@ -26,12 +26,11 @@
   "dependencies": {
     "css-loader": "^3.6.0",
     "file-loader": "^6.0.0",
+    "jquery": "^3.5.1",
+    "jquery-validation": "^1.19.2",
     "style-loader": "^1.2.1",
     "swiper": "^6.0.2",
     "websocket-extensions": "^0.1.4"
-  },
-  "optionalDependencies": {
-    "fsevents": "1.2.13"
   },
   "keywords": [
     "portfolio",

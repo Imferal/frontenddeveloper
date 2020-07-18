@@ -1,11 +1,18 @@
 const path = require ('path'); // Встроенный модуль NodeJS для путей к файлам проекта
 
 module.exports = {
-  entry: './src/index.js', // Файл входа
+  // entry: './src/index.js', // Файл входа
+  entry: path.resolve (__dirname, 'src/index.js'),
   output: {
-    path: path.join (__dirname, 'build/'), // dirname - путь к директории относительно файла, откуда идёт вызов
-    filename: 'bundle.js', // Куда собираем
+    path: path.join (__dirname, 'build'), // dirname - путь к директории относительно файла, откуда идёт вызов
+    // filename: '[name].[contenthash].js', // Куда собираем (с хэшем)
+    filename: '[name].js', // Куда собираем
     publicPath: '/build/', // Папка для стилей, картинок и т.п.
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
   },
   devtool: 'source-map',
   module: {

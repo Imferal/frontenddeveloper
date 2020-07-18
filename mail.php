@@ -10,7 +10,7 @@ $message = $_POST['userMessage'];
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'mail.nic.ru';  																							// Specify main and backup SMTP servers
+$mail->Host = 'mail.nic.ru';                                                // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'form@frontenddeveloper.ru'; // Ваш логин от почты с которой будут отправляться письма
 $mail->Password = '6y7^Y&6y7'; // Ваш пароль от почты с которой будут отправляться письма
@@ -28,14 +28,16 @@ $mail->addAddress('admin@frontenddeveloper.ru');     // Кому будет ух
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заполнена форма заявки на сайте';
-$mail->Body    = '' .$name . ' оставил заявку.<br>Контактные данные ' .$contacts. '<br>Оставлено сообщение: ' .$message;
+$mail->Body    = '' . $name . ' оставил заявку.<br>Контактные данные ' . $contacts . '<br>Оставлено сообщение: ' . $message;
 $mail->AltBody = '';
 
-if(!$mail->Send()) {
-    echo "Message could not be sent.  ";
-    echo "Mailer Error: " . $mail->ErrorInfo;
-    exit;
-  }
+if (!$mail->Send()) {
+  echo "Message could not be sent.  ";
+  echo "Mailer Error: " . $mail->ErrorInfo;
+  exit;
+} else {
+  header('location: thank-you.html');  
+}
+// echo "Message sent!";
     // header('location: thank-you.html');
     // window.location.href = 'thank-you.html ';
-?>

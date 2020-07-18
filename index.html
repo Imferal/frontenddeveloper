@@ -3,14 +3,14 @@
 
 <head>
     <!-- Google Tag Manager -->
-    <!-- <script>(function (w, d, s, l, i) {
+    <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
                 'gtm.start':
                     new Date().getTime(), event: 'gtm.js'
             }); var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PG6FXW8');</script> -->
+        })(window, document, 'script', 'dataLayer', 'GTM-PG6FXW8');</script>
     <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
@@ -32,8 +32,8 @@
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PG6FXW8" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript> -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PG6FXW8" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- header -->
@@ -480,7 +480,8 @@
             <div class="form__wave form__wave1"></div>
             <div class="form__wave form__wave2"></div>
             <div class="fixed-container">
-                <form enctype="multipart/form-data" class="form__container" method="POST">
+                <form action="mail.php" enctype="multipart/form-data" class="form__container popup__container"
+                    method="POST">
                     <fieldset class="form__fieldset">
                         <legend class="form__title form__title_indent">Форма для связи</legend>
                         <p class="form__description">Присылайте вакансии и тестовые задания или сразу сделайте
@@ -542,7 +543,9 @@
             <img id="bigImg" alt="Увеличенное изображение" src="#">
         </div>
     </div>
-    <script src="build/bundle.js"></script>
+    <!-- <script src="build/bundle.js"></script> -->
+    <script src="build/main.js"></script>
+    <script src="build/vendors~main.js"></script>
 </body>
 
 </html>

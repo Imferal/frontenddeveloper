@@ -29,6 +29,12 @@ footer {
   text-decoration: underline;
 }
 
+.footer__thank-you {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
 @media screen and (min-width: 481px) {
   .footer__wrapper {
 

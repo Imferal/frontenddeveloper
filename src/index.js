@@ -1,6 +1,13 @@
 require ('../index.html'); // Просим WebPack Dev Server следить за index.html
 import './style.scss'; // Импортируем стили
 
+// Импортируме jQuery
+import $ from 'jquery';
+global.jQuery = $;
+global.$ = $;
+
+// import validate from 'jquery-validation';
+
 // import Swiper bundle with all modules installed
 import Swiper from 'swiper/bundle';
 // import Swiper styles
@@ -70,3 +77,42 @@ backPop.onclick = function () {
   header.style.display = 'block';
   backPop.style.display = 'none';
 };
+
+// $ (function () {
+//   $ ('.form').validate ({
+//     rules: {
+//       field: {
+//         required: true,
+//         email: true,
+//       },
+//       terms: {
+//         required: true,
+//       },
+//     },
+//     submitHandler: function (form) {
+//       var formData = new FormData (form);
+
+$.ajax ({
+  url: './mail.php',
+  type: 'POST',
+  data: formData,
+  contentType: false,
+  processData: false,
+  success: function (data) {
+    console.log ('success');
+    window.location.href = '/thank-you.html ';
+  },
+});
+//     },
+//     messages: {
+//       terms: {
+//         required: 'Необходимо принять условия',
+//       },
+//     },
+//   });
+// });
+
+// jQuery.extend (jQuery.validator.messages, {
+//   required: 'Это поле обязательно для заполнения',
+//   email: 'Пожалуйста, укажите номер телефона или email',
+// });
