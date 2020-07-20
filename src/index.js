@@ -2,16 +2,16 @@ require ('../index.html'); // Просим WebPack Dev Server следить з�
 import './style.scss'; // Импортируем стили
 
 // Импортируме jQuery
-import $ from 'jquery';
-global.jQuery = $;
-global.$ = $;
+// import $ from 'jquery';
+// global.jQuery = $;
+// global.$ = $;
 
 // import validate from 'jquery-validation';
 
 // import Swiper bundle with all modules installed
-import Swiper from 'swiper/bundle';
+// import Swiper from 'swiper/bundle';
 // import Swiper styles
-import 'swiper/swiper.scss';
+// import 'swiper/swiper.scss';
 
 // Работа бургер-меню
 import {toggleBurgerMenu} from './js/toggleBurgerMenu';
@@ -92,17 +92,17 @@ backPop.onclick = function () {
 //     submitHandler: function (form) {
 //       var formData = new FormData (form);
 
-$.ajax ({
-  url: './mail.php',
-  type: 'POST',
-  data: formData,
-  contentType: false,
-  processData: false,
-  success: function (data) {
-    console.log ('success');
-    window.location.href = '/thank-you.html ';
-  },
-});
+// $.ajax ({
+//   url: './mail.php',
+//   type: 'POST',
+//   data: formData,
+//   contentType: false,
+//   processData: false,
+//   success: function (data) {
+//     console.log ('success');
+//     window.location.href = '/thank-you.html ';
+//   },
+// });
 //     },
 //     messages: {
 //       terms: {

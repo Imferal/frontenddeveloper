@@ -17,14 +17,21 @@ footer {
   margin: 0;
 }
 
-.footer__contacts {
+.footer__left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer__email {
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link {
   color: rgba($sand, 0.9);
   text-decoration: underline;
 }
@@ -43,7 +50,12 @@ footer {
     padding: 0.6rem 0;
   }
 
-  .footer__contacts {
+  .footer__left {
+
+    align-items: flex-start;
+  }
+
+  .footer__right {
 
     align-items: flex-end;
   }

@@ -28,7 +28,23 @@
       margin: 0 0 1em 63px;
       bottom: 0;
     }
+
+    &_thankyou {
+      // bottom: initial;
+      // margin: 0 auto;
+      text-align: right;
+      // width: 960px;
+      // display: block;
+      // padding-right: 1em;
+      // position: relative;
+      // font-weight: 600;
+      // z-index: 2;
+    }
   }
+}
+
+.welcome__content_thankyou {
+  display: block;
 }
 
 @media screen and (min-width: 1000px) {
@@ -38,8 +54,8 @@
   }
 
   .welcome__content_header {
-    margin: 0 auto;
     width: 960px;
+    margin: 0 auto;
   }
 
   .welcome__content_description {
