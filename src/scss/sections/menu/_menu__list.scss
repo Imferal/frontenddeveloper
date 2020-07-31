@@ -3,9 +3,8 @@
   flex-direction: column;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1000px) {
   .menu__list {
-    // display: flex;
     flex-direction: row;
   }
 }
