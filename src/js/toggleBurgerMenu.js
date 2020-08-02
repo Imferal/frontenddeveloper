@@ -13,11 +13,13 @@ export function toggleBurgerMenu () {
     ) {
       mobileMenu.classList.remove ('flex');
       mobileMenu.classList.add ('hidden');
+      document.body.classList.remove ('disable-scroll');
     }
   });
 
   formButton.addEventListener ('click', e => {
     mobileMenu.classList.remove ('flex');
     mobileMenu.classList.add ('hidden');
+    document.body.classList.remove ('disable-scroll');
   });
 }
