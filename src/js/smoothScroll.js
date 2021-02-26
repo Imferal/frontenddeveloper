@@ -1,6 +1,5 @@
 export function smoothScroll () {
-  const anchors = document.querySelectorAll ('a[href*="#"]');
-
+  const anchors = document.querySelectorAll ('a[href^="#"]');
   for (let anchor of anchors) {
     // На каждую из найденных ссылок вешаем событие
     anchor.addEventListener ('click', function (e) {
@@ -8,10 +7,10 @@ export function smoothScroll () {
       // Находим цель перехода
       const blockID = anchor.getAttribute ('href');
       // Добавляем высоту шапки
-      const fixedHeaderHeight = 30;
-      // Вычисляем расстояние
+      const fixedHeaderHeight = 50;
+      // Вычисляем координату для перехода
       const top =
-        document.querySelector ('' + blockID).offsetTop - fixedHeaderHeight;
+        document.querySelector (blockID).offsetTop - fixedHeaderHeight;
       // Прокрутка до вычесленной точки, по левому краю, плавно
       window.scrollTo ({
         top,

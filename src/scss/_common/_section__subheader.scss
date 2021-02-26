@@ -2,4 +2,8 @@
   color: #000;
   padding: 0.8em $indent_regular;
 
+  &_link {
+    color: #000;
+    text-decoration: underline;
+  }
 }

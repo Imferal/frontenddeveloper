@@ -48,7 +48,7 @@ $move: ();
 
     &:hover,
     &:focus {
-      animation: bubbles-green 1.5s forwards ease-out;
+      animation: bubbles-green .8s forwards ease-out;
       background: $bubbles;
       background-color: $wave;
       background-repeat: no-repeat;
@@ -63,7 +63,7 @@ $move: ();
 
     &:hover,
     &:focus {
-      animation: bubbles-sky 1.5s forwards ease-out;
+      animation: bubbles-sky .8s forwards ease-out;
       background: $bubbles;
       background-color: $sky;
       background-repeat: no-repeat;

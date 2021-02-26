@@ -80,8 +80,9 @@
 
 .swiper-description {
   color: black;
-  font-size: 0.9rem;
-  font-style: italic;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.04rem;
 }
 
 .slider {
@@ -108,8 +109,8 @@
   flex-shrink: 1;
   flex-grow: 0;
   //   margin: 0 !important;
-  right: 0;
-  width: calc(100% - 1.7rem);
+  // right: 0;
+  // width: calc(100% - 1.7rem);
 }
 
 .swiper-pagination-bullet {

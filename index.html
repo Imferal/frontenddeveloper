@@ -4,13 +4,18 @@
 <head>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PG6FXW8');</script>
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PG6FXW8');</script>
     <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
@@ -35,535 +40,554 @@
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PG6FXW8" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PG6FXW8" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-    <!-- header -->
-    <header id="header" class="header">
-        <div class="header__container">
-            <div class="header__body">
+<!-- header -->
+<header id="header" class="header">
+    <div class="header__container">
+        <div class="header__body">
+            <button class="burger" id="burger" aria-expanded="false" tabindex="-1">
+                <span class="burger__line burger__line_first"></span>
+                <span class="burger__line burger__line_second"></span>
+                <span class="burger__line burger__line_third"></span>
+                <span class="burger__line burger__line_fourth"></span>
+            </button>
+            <nav class="menu hidden">
+                <ul class="menu__list" id="menu__list" aria-label="Главное меню" role="menu">
+                    <li class="menu__item" role="none">
+                        <a href="#mainSkills" class="menu__link" role="menuitem">Знания</a>
+                    </li>
+                    <li class="menu__item" role="none">
+                        <a href="#portfolio" class="menu__link" tabindex="0" role="menuitem">Портфолио</a>
+                    </li>
+                    <li class="menu__item" role="none">
+                        <a href="#about" class="menu__link" role="menuitem">Обо мне</a>
+                    </li>
+                    <li class="menu__item" role="none">
+                        <a href="https://spb.hh.ru/resume/a254d3f4ff07d662620039ed1f395439506133"
+                           class="menu__link sand" role="menuitem">hh.ru</a>
+                    </li>
+                    <li class="menu__item" role="none">
+                        <a href="https://github.com/Imferal" class="menu__link sand" role="menuitem">GitHub</a>
+                    </li>
+                    <li class="menu__item" role="none">
+                        <a href="/cats" class="menu__link sand" role="menuitem">Диплом на ReactJS</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#form" class="btn btn_bubble_green header__button">Отправить сообщение</a>
+            <a class="header__phone" href="">+7 (964) 323 11 10</a>
+        </div>
+    </div>
+</header>
 
-                <button class="burger" id="burger" aria-expanded="false" tabindex="-1">
-                    <span class="burger__line burger__line_first"></span>
-                    <span class="burger__line burger__line_second"></span>
-                    <span class="burger__line burger__line_third"></span>
-                    <span class="burger__line burger__line_fourth"></span>
-                </button>
-
-                <nav class="menu hidden">
-
-                    <ul class="menu__list" id="menu__list" aria-label="Главное меню" role="menu">
-                        <li class="menu__item" role="none">
-                            <a href="#mainSkills" class="menu__link" role="menuitem">Знания</a>
-                        </li>
-                        <li class="menu__item" role="none">
-                            <a href=" #portfolio" class="menu__link" tabindex="0" role="menuitem">Портфолио</a>
-                        </li>
-                        <li class="menu__item" role="none">
-                            <a href=" #about" class="menu__link" role="menuitem">Обо мне</a>
-                        </li>
-                        <li class="menu__item" role="none">
-                            <a href="https://spb.hh.ru/resume/a254d3f4ff07d662620039ed1f395439506133"
-                                class="menu__link sand" role="menuitem">hh.ru</a>
-                        </li>
-                        <li class="menu__item" role="none">
-                            <a href="https://github.com/Imferal" class="menu__link sand" role="menuitem">GitHub</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <a href="#form" class="btn btn_bubble_green header__button">Отправить сообщение</a>
-
-                <a class="header__phone" href="">+7 (964) 323 11 10</a>
+<main>
+    <section id="welcome">
+        <div class="container-sky">
+            <div class="welcome__wave1"></div>
+            <div class="welcome__wave2"></div>
+            <div class="welcome__wave3"></div>
+            <div class="welcome__wave4"></div>
+            <div class="welcome__lines">
+                <div class="welcome__lines_scroll">scroll down</div>
+                <div class="welcome__lines_first"></div>
+                <div class="welcome__lines_second"></div>
+                <div class="welcome__lines_fourth"></div>
+            </div>
+            <div class="welcome__content">
+                <div class="welcome__content_header">
+                    <h2 class="welcome__content_indent">Frontend-разработчик</h2>
+                    <div class="header-line"></div>
+                    <h1>Владимир Смирнов</h1>
+                </div>
+                <p class="welcome__content_description welcome__content_description_indent">Это сайт-портфолио для
+                    работодателей.<br/>Мой стек на данный момент: HTML5, CSS/SCSS, Vanilla JavaScript, React,
+                    Redux,
+                    jQuery, AJAX, Gulp, WebPack, Git и PHP&nbsp(базовый уровень).
+                </p>
             </div>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <section id="welcome">
-            <div class="container-sky">
-                <div class="welcome__wave1"></div>
-                <div class="welcome__wave2"></div>
-                <div class="welcome__wave3"></div>
-                <div class="welcome__wave4"></div>
-
-
-                <div class="welcome__lines">
-                    <div class="welcome__lines_scroll">scroll down</div>
-                    <div class="welcome__lines_first"></div>
-                    <div class="welcome__lines_second"></div>
-                    <div class="welcome__lines_fourth"></div>
+    <section id="mainSkills" aria-label="Знания">
+        <div class="fixed-container">
+            <div class="container-light">
+                <div class="section__header-container">
+                    <h2 class="section__header">Знания</h2>
+                    <div class="header-line section__header-line"></div>
                 </div>
-
-                <div class="welcome__content">
-                    <div class="welcome__content_header">
-                        <h2 class="welcome__content_indent">Портфолио</h2>
-                        <div class="header-line"></div>
-                        <h1>Владимир Смирнов</h1>
-                    </div>
-
-                    <p class="welcome__content_description welcome__content_description_indent">Это сайт для
-                        работодателей. В портфолио пока нет коммерческих проектов - я ищу свою первую работу в качестве
-                        разработчика. Также буду крайне благодарен за обратную связь по сайту и контенту, что
-                        улучшить/убрать/добавить. Пишите замечания прямо через форму заявки или на почту. Мне бы это
-                        очень помогло.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="mainSkills" aria-label="Знания">
-            <div class="fixed-container">
-                <div class="container-light">
-                    <div class="section__header-container">
-                        <h2 class="section__header">Знания</h2>
-                        <div class="header-line section__header-line"></div>
-                    </div>
-
-                    <h3 class="section__subheader">Основные</h3>
+                <h3 class="section__subheader">Основные</h3>
+                <ul>
+                    <li>
+                        <article class="mainSkills__article">
+                            <h4 class="mainSkills__article-header"><a class="mainSkills__link" href="" title="">HTML
+                                5</a></h4>
+                            <img class="mainSkills__logo" src="img/html-5.svg" alt="Логотип HTML5"/>
+                            <p class="mainSkills__description">Хорошо понимаю специфику HTML пятой редакции,
+                                использую
+                                семантические теги и атрибуты доступности. Всегда думаю о посетителях сайта,
+                                поисковых роботах и разработчиках, которые будут работать с моей разметкой.
+                            </p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="mainSkills__article">
+                            <h4 class="mainSkills__article-header"><a class="mainSkills__link" href=""
+                                                                      title="">CSS/SCSS</a></h4>
+                            <img class="mainSkills__logo" src="img/sass-1.svg" alt="Логотип HTML5"/>
+                            <p class="mainSkills__description">В основном пишу стили на препроцессоре. Уже не
+                                понимаю как жить без переменных, вложенности и импортов - стараюсь дробить любой
+                                проект на модули, чтобы было легко его поддерживать.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="mainSkills__article">
+                            <h4 class="mainSkills__article-header"><a class="mainSkills__link" href=""
+                                                                      title="">JavaScript, jQuery</a></h4>
+                            <img class="mainSkills__logo" src="img/javascript-4.svg" alt="Логотип HTML5"/>
+                            <p class="mainSkills__description">В настоящий момент в изучении JavaScript делаю акцент
+                                на чистую, "ванильную" версию. Различные готовые решения и дополнительные
+                                библиотеки,
+                                такие как jQuery, использовать умею, но стараюсь не злоупотреблять.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="mainSkills__article">
+                            <h4 class="mainSkills__article-header"><a class="mainSkills__link" href="" title="">
+                                React, Redux</a>
+                            </h4>
+                            <img class="mainSkills__logo" src="img/react.svg" alt="Логотип HTML5"/>
+                            <p class="mainSkills__description">Активно осваиваю React и Redux -
+                                хотелось бы развиваться в сторону разработки приложений и интерфейсов. Защитил
+                                диплом с
+                                моим первым MVC-приложением на React. Сейчас начал работу по двум новым персональным
+                                проектам.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="mainSkills__article">
+                            <h4 class="mainSkills__article-header"><a class="mainSkills__link" href=""
+                                                                      title="">Gulp,
+                                Webpack</a></h4>
+                            <img class="mainSkills__logo" src="img/webpack-icon.svg" alt="Логотип HTML5"/>
+                            <p class="mainSkills__description">Сборщики использую всегда. Сначала изучил Gulp, затем
+                                перешёл на WebPack. Могу настроить базовый конфиг - сервер, сборку, uglify,
+                                css/scss-лоадеры, sourcemap, вот это всё.</p>
+                        </article>
+                    </li>
+                </ul>
+                <a href="#form" class="btn btn_bubble_green btn_indent">Написать мне</a>
+                <article class="common__text-article">
+                    <h3 class="regular__paragraph regular__paragraph_right fixed-container">Вторичные навыки,
+                        которые могут пригодиться</h3>
+                    <p class="regular__paragraph  fixed-container">
                     <ul>
                         <li>
-                            <article class="mainSkills__article">
-                                <h4 class="mainSkills__article-header"><a class="mainSkills__link" href="" title="">HTML
-                                        5</a></h4>
-                                <img class="mainSkills__logo" src="img/html-5.svg" alt="Логотип HTML5" />
-                                <p class="mainSkills__description">Хорошо понимаю специфику HTML пятой редакции,
-                                    использую
-                                    семантические теги и атрибуты доступности. Всегда думаю о посетителях сайта,
-                                    поисковых роботах и разработчиках, которые будут работать с моей разметкой.
-                                </p>
-                            </article>
+                            <p class="regular__paragraph"><strong>Управление проектами</strong> - три года
+                                руководил проектами в веб-студии. Знаю основы, заглядывал в PMBoK и даже BABoK
+                                (посещал курсы по BA в
+                                EPAM).</p>
                         </li>
                         <li>
-                            <article class="mainSkills__article">
-                                <h4 class="mainSkills__article-header"><a class="mainSkills__link" href=""
-                                        title="">CSS/SCSS</a></h4>
-                                <img class="mainSkills__logo" src="img/sass-1.svg" alt="Логотип HTML5" />
-                                <p class="mainSkills__description">В основном пишу стили на препроцессоре. Уже не
-                                    понимаю как жить без переменных, вложенности и импортов - стараюсь дробить любой
-                                    проект на модули, чтобы было легко его поддерживать.</p>
-                            </article>
+                            <p class="regular__paragraph"><strong>UX/UI</strong> - имею многолетний опыт работы с
+                                дизайнерами. Хорошо понимаю базовые принципы построения простых и удобных
+                                интерфейсов. В качестве примера этот сайт.</p>
                         </li>
                         <li>
-                            <article class="mainSkills__article">
-                                <h4 class="mainSkills__article-header"><a class="mainSkills__link" href=""
-                                        title="">JavaScript, jQuery</a></h4>
-                                <img class="mainSkills__logo" src="img/javascript-4.svg" alt="Логотип HTML5" />
-                                <p class="mainSkills__description">В настоящий момент в изучении JavaScript делаю акцент
-                                    на чистую, "ванильную" версию. Различные готовые решения и дополнительные
-                                    библиотеки,
-                                    такие как jQuery, умею использовать, но стараюсь не злоупотреблять.</p>
-                            </article>
+                            <p class="regular__paragraph"><strong>Agile/Kanban</strong> - в работе (и не только)
+                                стараюсь придерживаться основных принципов гибких
+                                методологий. Все проекты, кроме самых ранних, вёл только по канбан - с досками,
+                                разноцветными бумажками и маркерами. Trello - как дублирующий электронный вариант.
+                            </p>
                         </li>
                         <li>
-                            <article class="mainSkills__article">
-                                <h4 class="mainSkills__article-header"><a class="mainSkills__link" href="" title="">
-                                        React, Redux</a>
-                                </h4>
-                                <img class="mainSkills__logo" src="img/react.svg" alt="Логотип HTML5" />
-                                <p class="mainSkills__description">Активно осваиваю React и Redux -
-                                    хотелось бы развиваться в сторону разработки приложений и интерфейсов. Буду
-                                    выкладывать свои наработки на гитхабе, что-то там уже есть.</p>
-                            </article>
+                            <p class="regular__paragraph"><strong>Постановка задач</strong> - умею ставить задачи
+                                так, чтобы получить от исполнителя ожидаемый результат, и сам не
+                                возьмусь за непонятно/неверно оформленную задачу, пока не уточню все необходимые
+                                данные. Применяю S.M.A.R.T.-подход, а также собственный практический
+                                опыт работы с самыми разными людьми как в офлайне, так и в онлайне.</p>
                         </li>
                         <li>
-                            <article class="mainSkills__article">
-                                <h4 class="mainSkills__article-header"><a class="mainSkills__link" href=""
-                                        title="">Gulp,
-                                        Webpack</a></h4>
-                                <img class="mainSkills__logo" src="img/webpack-icon.svg" alt="Логотип HTML5" />
-                                <p class="mainSkills__description">Сборщики использую всегда. Сначала изучил Gulp, затем
-                                    перешёл на WebPack. Могу настроить базовый конфиг - сервер, сборку, uglify,
-                                    css/scss-лоадеры, sourcemap, вот это всё.</p>
-                            </article>
+                            <p class="regular__paragraph"><strong>Оценка трудозатрат</strong> - опыт управления
+                                проектами в большинстве случаев позволяет мне адекватно оценивать ситуацию и
+                                называть реалистичные
+                                сроки и ресурсы, необходимые для выполнения той или иной задачи.</p>
                         </li>
                     </ul>
-
-                    <a href="#form" class="btn btn_bubble_green btn_indent">Написать мне</a>
-                    <article class="common__text-article">
-                        <h3 class="regular__paragraph regular__paragraph_right fixed-container">Вторичные навыки,
-                            которые могут пригодиться</h3>
-                        <p class="regular__paragraph  fixed-container">
-                        <ul>
-                            <li>
-                                <p class="regular__paragraph"><strong>UX/UI</strong> - имею многолетний опыт работы с
-                                    дизайнерами, в основном онлайн. По долгу службы пришлось узнать основы веб-дизайна и
-                                    юзабилити. Хорошо понимаю базовые принципы построения простых и удобных
-                                    интерфейсов. В качестве примера вот этот самый сайт.</p>
-                            </li>
-                            <li>
-                                <p class="regular__paragraph"><strong>Управление проектами</strong> - три года
-                                    руководил проектами в веб-студии. Начинал с обычных менеджерских функций, постепенно
-                                    втянулся. :) Знаю основы, заглядывал в PMBoK и даже BABoK (посещал курсы по BA в
-                                    EPAM). Очень интересная тема. Хотя давно не практиковался и что-то подзабыл, но при
-                                    необходимости смогу без проблем освежить воспоминания.</p>
-                            </li>
-                            <li>
-                                <p class="regular__paragraph"><strong>Agile/Kanban</strong> - понимаю и разделяю этот
-                                    подход. В работе (и не только) стараюсь придерживаться основных принципов гибких
-                                    методологий. Не следую каким-то конкретным правилам, которых, в общем-то, и нет, но
-                                    выбираю стратегию каждый раз под конкретную задачу. Иногда нужен и классический
-                                    Waterfall. Все проекты, кроме самых ранних, вёл только по канбан - с досками,
-                                    разноцветными бумажками и маркерами. Trello - как дублирующий электронный вариант.
-                                </p>
-                            </li>
-                            <li>
-                                <p class="regular__paragraph"><strong>Постановка задач</strong> - умею ставить задачи
-                                    так, чтобы получить от исполнителя ожидаемый результат. В тоже время и сам не
-                                    возьмусь за непонятно/неверно оформленную задачу, пока не уточню все необходимые
-                                    данные. Применяю классический S.M.A.R.T.-подход, а также собственный практический
-                                    опыт работы с самыми разными людьми как в офлайне, так и в онлайне.</p>
-                            </li>
-                            <li>
-                                <p class="regular__paragraph"><strong>Оценка трудозатрат</strong> - опыт управления
-                                    проектами позволяет мне достаточно здраво оценивать ситуацию и называть реалистичные
-                                    сроки/ресурсы, необходимые для выполнения той или иной задачи.</p>
-                            </li>
-                        </ul>
-                    </article>
-                    <article class="common__text-article">
-                        <h3 class="regular__paragraph regular__paragraph_right fixed-container">Soft Skills</h3>
-                        <ul>
-                            <li>
-                                <p class="regular__paragraph"><strong>Обучаемость</strong> - стремлюсь постоянно
-                                    развиваться, осваивать новые навыки, получать знания в различных областях IT, чтобы
-                                    объективно и системно подходить к работе. Я могу быстро изучить
-                                    новую технологию или подход и начать применять их на практике.</p>
-                            </li>
-                            <li>
-                                <p class="regular__paragraph"><strong>Переговоры</strong> - в общей сложности больше
-                                    десяти лет моей работы проходили в постоянном общении с клиентами. В продажах
-                                    (корпоративных и рознчиных) и закупках. Это совершенно точно не то, чем я хочу
-                                    заниматься, однако, если необходимо провести встречу с клиентом, обсудить проект,
-                                    дать экспертную оценку - я знаю, как это делать.</p>
-                            </li>
-                            <li>
-                                <p class="regular__paragraph"><strong>Наставничество</strong> - есть опыт
-                                    обучения новых сотрудников, написания регламентов, внедрения технологий. У
-                                    меня гуманитарное, в том числе педагогическое образование, так что мне это интересно
-                                    и я могу без проблем при необходимости уделять этому часть времени.</p>
-                            </li>
-                            <li>
-                                <p class="regular__paragraph"><strong>Управление персоналом</strong> - как правило я
-                                    легко нахожу общий язык с людьми, вне зависимости от их возраста, квалификации,
-                                    очного или удалённого характера работы. Умею находить отличных специалистов,
-                                    выстраивать здоровую рабочую атмосферу в коллективе. Как и работа с клиентами, это
-                                    не то, чем я хотел бы заниматься, но при необходимости могу применять эти
-                                    навыки в работе.</p>
-                            </li>
-                        </ul>
-                    </article>
-                </div>
+                </article>
+                <article class="common__text-article">
+                    <h3 class="regular__paragraph regular__paragraph_right fixed-container">Soft Skills</h3>
+                    <ul>
+                        <li>
+                            <p class="regular__paragraph"><strong>Обучаемость</strong> - стремлюсь постоянно
+                                развиваться, осваивать новые навыки, получать знания в различных областях IT. Я могу
+                                быстро изучить новую технологию или подход и начать применять их на практике.</p>
+                        </li>
+                        <li>
+                            <p class="regular__paragraph"><strong>Переговоры</strong> - в общей сложности больше
+                                десяти лет моей работы проходили в постоянном общении с клиентами. В продажах
+                                (корпоративных и рознчиных) и закупках. Если необходимо провести встречу с клиентом,
+                                обсудить проект, дать экспертную оценку - я знаю, как это делать.</p>
+                        </li>
+                        <li>
+                            <p class="regular__paragraph"><strong>Наставничество</strong> - есть опыт
+                                обучения новых сотрудников, написания регламентов, внедрения технологий. У
+                                меня гуманитарное и в том числе педагогическое образование, мне интересно заниматься
+                                обучением и я могу уделять этому часть времени.</p>
+                        </li>
+                        <li>
+                            <p class="regular__paragraph"><strong>Управление персоналом</strong> - я
+                                легко нахожу общий язык с людьми вне зависимости от их возраста, квалификации,
+                                очного или удалённого характера работы. Умею подбирать отличных специалистов,
+                                выстраивать здоровую рабочую атмосферу в коллективе.</p>
+                        </li>
+                    </ul>
+                </article>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="important" aria-label="Важная информация">
-            <div class="container-sky important__container">
-                <div class="note__decorline note__decorline_left-vertical"></div>
-                <div class="note__decorline note__decorline_bottom-horizontal"></div>
-                <div class="note__container">
-                    <h3 class="note__header">Важно</h3>
-                    <p class="note__text">
-                        Безусловно, несмотря на перечисленные выше "необязательные" скилы, я хочу в первую очередь
-                        заниматься фронтенд-разработкой. Часть навыков, которые я указал, могут быть полезны при
-                        трудоустройстве в небольшую компанию, где не хватает узких специалистов. Я могу проводить
-                        собеседования и руководить проектами, грамотно составлять письма. Могу починить компьютер и
-                        собрать рабочий стол или стеллаж из икеи :). Но я ищу работу именно frontend-разработчиком, и
-                        считаю важным сделать на этом акцент.
-                    </p>
-                </div>
+    <section class="important" aria-label="Важная информация">
+        <div class="container-sky important__container">
+            <div class="note__decorline note__decorline_left-vertical"></div>
+            <div class="note__decorline note__decorline_bottom-horizontal"></div>
+            <div class="note__container">
+                <h3 class="note__header">Подробнее</h3>
+                <p class="note__text">
+                    Детальную информацию о моих предыдущих местах работы и полученном опыте вы можете посмотреть в
+                    подробном
+                    резюме на хедхантере.
+                    <a href="https://spb.hh.ru/resume/a254d3f4ff07d662620039ed1f395439506133"
+                       class="note__link">hh.ru</a>
+                </p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="portfolio" aria-label="Портфолио">
-            <div class="section__header-container section__header-container_right fixed-container">
-                <h2 class="section__header">Мои работы</h2>
-                <div class="header-line section__header-line"></div>
-            </div>
+    <section id="portfolio" aria-label="Портфолио">
+        <div class="section__header-container section__header-container_right fixed-container">
+            <h2 class="section__header">Мои работы</h2>
+            <div class="header-line section__header-line"></div>
+        </div>
+        <article class="common__text-article">
+            <h3 class="fixed-container regular__paragraph_right section__subheader">Этот сайт, диплом на ReactJS</a>
+                и несколько ранних проектов на гитхабе</a>
+            </h3>
+            <p class="regular__paragraph fixed-container">Для тех, кого интересует только код, сразу ссылка на <a
+                    class="regular__link" href="https://github.com/Imferal">GitHub</a>. Кое-что там уже есть, будет
+                больше.</p>
+            <p class="regular__paragraph fixed-container">Немного рекурсии: моей основной завершённой работой на
+                данный
+                момент является этот сайт, на котором вы читаете о моих работах. Это пока единственный
+                проект, реально использующийся в "боевых условиях", созданный для конкретной "коммерческой" цели -
+                найти работу. Я сделал его полностью самостоятельно. По нему можно
+                составить представление о моих текущих возможностях.</p>
+        </article>
 
-            <article class="common__text-article">
+        <article class="common__text-article">
+            <h3 id="frontenddeveloper" class="fixed-container regular__paragraph_right section__subheader">
+                frontenddeveloper.ru</h3>
+            <h4 class="regular__paragraph fixed-container">Откуда дизайн?</h4>
+            <p class="regular__paragraph fixed-container">Дизайн придумал сам. Для прототипа
+                использовал Figma, потому что она бесплатна и работает на моём Linux Mint. По
+                ходу наполнения контентом и проведения различных экспериментов дорабатывал и допиливал так и эдак.
+                На скриншоте одна из ранних версий.</p>
+            <p class="regular__paragraph fixed-container"><i>Ранняя версия дизайна. Жмите прямо на скриншот, чтобы
+                увеличить!</i></p>
+            <img src="img/screenFigma.png" alt="" class="fixed-container screenshot__img">
+        </article>
 
-                <h3 class="fixed-container regular__paragraph_right section__subheader">Этот сайт и несколько проектов
-                    на гитхабе</h3>
-                <p class="regular__paragraph fixed-container">Для тех, кого интересует только код, сразу ссылка на <a
-                        class="regular__link" href="https://github.com/Imferal">GitHub</a>. Кое-что там уже есть, будет
-                    больше.</p>
-                <p class="regular__paragraph fixed-container">Немного рекурсии: моей основной работой на данный
-                    момент является вот этот самый сайт на котором вы читаете о моих работах. Это пока единственный
-                    проект, реально использующийся в "боевых условиях", созданный для конкретной "коммерческой" цели -
-                    найти работу. Я сделал его полностью самостоятельно, без чьей либо помощи. По нему можно
-                    составить представление о моих текущих возможностях.</p>
-            </article>
+        <article class="common__text-article">
+            <h4 class="regular__paragraph fixed-container">Инструменты и стратегия</h4>
+            <p class="regular__paragraph fixed-container">В работе применял подход Mobile First. В качестве сборщика
+                ещё во время учёбы выбрал для себя WebPack, этот проект не исключение. При необходимости могу
+                собирать Gulp'ом. Организация кода и структуры папок - БЭМ. Я люблю дробить проект на отдельные
+                модули, всё становится очень просто и никуда не теряется.</p>
+        </article>
 
-            <article class="common__text-article">
+        <!--            <p class="regular__paragraph fixed-container"><i>Вот ещё несколько скриншотов рабочего процесса. Жмите прямо-->
+        <!--                    на картинку для увеличения/уменьшения или крутаните разок, чтобы слайдер остановился!</i></p>-->
+        <!--            <div class="fixed-container">-->
+        <!--                <div class="slider">-->
+        <!--                    &lt;!&ndash; <div class="swiper-pagination"></div> &ndash;&gt;-->
+        <!--                    <div class="swiper-container">-->
+        <!--                        <div class="swiper-wrapper">-->
+        <!--                            &lt;!&ndash; Slides &ndash;&gt;-->
+        <!--                            <div class="swiper-slide">-->
+        <!--                                <img src="img/screenCode.png" alt="" class="screenshot__img">-->
+        <!--                                <p class="swiper-description">1. Вот так обычно выглядит мой Visual Studio Code.</p>-->
+        <!--                            </div>-->
+        <!--                            <div class="swiper-slide">-->
+        <!--                                <img src="img/screenCode2.png" alt="" class="screenshot__img">-->
+        <!--                                <p class="swiper-description">2. А тут немного о том, как организована иерархия файлов и-->
+        <!--                                    импорты.</p>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <article class="common__text-article">
+            <h4 class="regular__paragraph fixed-container">Технологии</h4>
+            <p class="regular__paragraph fixed-container">Все скрипты написаны на чистом JS, форма
+                отправляется через PHP-mailer. Возможно, добавлю какой-нибудь "красоты" на jQuery, а пока не хочется
+                испльзовать огромную библиотеку только для того, чтобы сделать модальное окно или бургер-меню на
+                одностраничном сайте. Привычка экономить ресурсы у меня со времён ZX Spectrum, на котором я учился
+                программировать.</p>
+            <p class="regular__paragraph fixed-container">Ну и кроме того, установил счётчик Google Analytics, так
+                что я вас вижу. ;)</p>
+        </article>
 
-                <h3 class="fixed-container regular__paragraph_right section__subheader">Откуда дизайн?</h3>
+        <h3 id="diplom" class="fixed-container regular__paragraph_right section__subheader">
+            Дипломная работа на ReactJS</h3>
 
-                <p class="regular__paragraph  fixed-container">Дизайн придумал сам. Для прототипа
-                    использовал Figma, потому что она бесплатна и работает на моём Linux Mint. По
-                    ходу наполнения контентом и проведения различных экспериментов дорабатывал и допиливал так и эдак.
-                    На скриншоте одна из ранних версий. На самом деле весь сайт состоит из типовых элементов и подходов,
-                    которые используются в дизайне последние лет десять. Я просто скомпоновал их и причесал для
-                    единства стиля.</p>
-                <p class="regular__paragraph  fixed-container"><i>Ранняя версия дизайна. Жмите прямо на скриншот, чтобы
-                        увеличить!</i></p>
-                <img src="img/screenFigma.jpg" alt="" class="fixed-container screenshot__img">
+        <article class="common__text-article">
+            <p class="regular__paragraph fixed-container">Это небольшая фотогалерея. Фотографии должны
+                подгружаться с внешнего сайта unsplash.com. Чтобы работалось веселее, я решил забирать с сервера
+                только фотографии котов. Проект получил гордое название "КотоФото".
+            <p class="regular__paragraph fixed-container">
+                <a class="regular__link" href="cats/">Результат</a>
+                <br>
+                <a class="regular__link" href="https://github.com/Imferal/JS-graduate-work">GitHub</a>
+            </p>
+        </article>
 
-            </article>
-            <article class="common__text-article">
+        <article class="common__text-article">
+            <h4 class="regular__paragraph fixed-container">Задание</h4>
+            <p class="regular__paragraph fixed-container">Требовалось реализовать общую галерею с "плиточной"
+                структурой, автоподгрузкой фотографий при скролле и просмотр отдельной фотографии. Также необходима
+                была авторизация, чтобы ставить лайки, которые затем отображались бы в том числе и на сайте
+                unsplash.com.</p>
+            <p class="regular__paragraph fixed-container">От себя я добавил страницу авторизации (по ТЗ она должна
+                была происходить автоматически), отображение имени пользователя, возможность листать фотографии в
+                режиме просмотра на полный экран, а также разные дизайнерские мелочи, призванные добавить сайту
+                "кошачести".</p>
+            <p class="regular__paragraph fixed-container"><i>Вот что получилось. Жмите прямо на скриншот, чтобы
+                увеличить!</i></p>
+            <img src="img/КотоФото1.png" alt="" class="fixed-container screenshot__img">
+            <p class="regular__paragraph fixed-container"><i>Версия для мобильных устройств:</i></p>
+            <img src="img/КотоФото2.png" alt="" class="fixed-container screenshot__img">
+        </article>
 
-                <h3 class="fixed-container regular__paragraph_right section__subheader">Инструменты и стратегия</h3>
+        <article class="common__text-article">
+            <h4 class="regular__paragraph fixed-container">Технические моменты</h4>
+            <p class="regular__paragraph fixed-container">Использовалась стандартная связка React+Redux.
+                Маршрутизация через BrowserRouter. Я сделал три редюсера: api, фотографии, пользователь. Хотя можно
+                было вполне обойтись одним, хотелось попрактиковаться. Где необходимо создавал контейнерные
+                компоненты.</p>
+        </article>
 
-                <p class="regular__paragraph fixed-container">В работе применял подход Mobile First. В качестве сборщика
-                    обычно использую WebPack, этот проект не исключение. При необходимости могу собирать Gulp'ом.
-                    Организация кода и структуры папок - БЭМ. По крайней мере в той степени, в которой я счёл это
-                    необходимым на таком маленьком проекте. Я люблю дробить проект на отдельные
-                    модули, всё становится очень просто и никуда не теряется.</p>
-            </article>
-
-            <p class="regular__paragraph fixed-container">Вот ещё несколько скриншотов рабочего процесса. Жмите прямо на
-                картинку
-                для увеличения или крутаните разок, чтобы слайдер остановился!</p>
-            <div class="fixed-container">
-                <div class="slider">
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <img src="img/screenCode.jpg" alt="" class="screenshot__img">
-                                <p class="swiper-description">Вот так обычно выглядит мой Visual Studio Code.</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/screenCode2.jpg" alt="" class="screenshot__img">
-                                <p class="swiper-description">А тут немного о том, как организована иерархия файлов и
-                                    импорты.</p>
-                            </div>
+        <p class="regular__paragraph fixed-container"><i>Вот несколько примеров кода. Жмите прямо
+            на
+            картинку
+            для увеличения/уменьшения или крутаните разок, чтобы слайдер остановился!</i></p>
+        <div class="fixed-container">
+            <div class="slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="img/КотоФотоРедюсер.png" alt="" class="screenshot__img">
+                            <p class="swiper-description">1. Один из редюсеров</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/КотоФотоКомпонента.png" alt="" class="screenshot__img">
+                            <p class="swiper-description">2. Компонента</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/КотоФотоКонтейнер.png" alt="" class="screenshot__img">
+                            <p class="swiper-description">3. Контейнерная компонента</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/КотоФотоРоутинг.png" alt="" class="screenshot__img">
+                            <p class="swiper-description">4. Роутинг</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <article class="common__text-article">
+        </div>
+    </section>
 
-                <h3 class="fixed-container regular__paragraph_right section__subheader">Технологии</h3>
+    <br>
 
-                <p class="regular__paragraph fixed-container">Пока что все скрипты написаны на чистом JS, но может
-                    что-то добавлю
-                    на jQuery по мере роста сайта (идеи-то есть - времени нет).</p>
-                <p class="regular__paragraph fixed-container">
-                    Я считаю плохой практикой использование огромной библиотеки только для
-                    того, чтобы сделать модальное окно или бургер-меню на одностраничном сайте. Отчасти, сказывается моё
-                    прошлое - первым компьютером у меня был ZX Spectrum и я до сих пор не могу принять тот
-                    факт, что раньше игра с музыкой и графикой занимала 48кб, а сейчас объём вырос в миллион раз и даже
-                    этого некоторым не хватает.</p>
-                <p class="regular__paragraph fixed-container">Ну и, кроме того, установил счётчики Google Analytics и
-                    Яндекс.метрика, так что я вас вижу. ;)
-                    Также, по мере сил, работаю над сео-оптимизацией, хотя и отдаю себе отчёт в том, что смысла в этом
-                    не много.</p>
-            </article>
-        </section>
-
-        <section class="important" aria-label="Важная информация">
-            <!-- <div class="fixed-container"> -->
-            <div class="container-sky important__container">
-                <div class="note__decorline note__decorline_right-vertical"></div>
-                <div class="note__decorline note__decorline_top-horizontal"></div>
-                <div class="note__container">
-                    <h3 class="note__header">Пара слов о моих проектах на GitHub</h3>
-                    <p class="note__text">
-                        Пока их немного. Это несколько проектов, которые я сделал во время учёбы на курсах
-                        самостоятельно, без помощи преподавателей и с определённой импровизацией, так что по ним можно
-                        оценить мой уровень. Хотя, очевидно, что раз
-                        я учусь, то и мои навыки довольно быстро растут и
-                        изменяюются, так что по меньшей мере имеет смысл обращать внимание на дату коммитов. Также буду
-                        выкладывать туда свои дипломные работы. На всякий
-                        случай, вот ещё раз ссылка. А вообще надо бы её в шапку и подвал добавить... </p>
-                    <a href="https://github.com/Imferal" class="note__link">GitHub</a>
-                </div>
+    <section id="githubprojects" class="important" aria-label="Важная информация">
+        <div class="container-sky important__container">
+            <div class="note__decorline note__decorline_right-vertical"></div>
+            <div class="note__decorline note__decorline_top-horizontal"></div>
+            <div class="note__container">
+                <h3 class="note__header">Пара слов о моих проектах на GitHub</h3>
+                <p class="note__text">
+                    Пока их немного. Это несколько проектов, которые я сделал во время учёбы на курсах
+                    самостоятельно, без помощи преподавателей и с определённой импровизацией, так что по ним можно
+                    оценить мой уровень <i>(примечание: мой уровень на середину 2020 года, смотрите на дату
+                    коммитов)</i>. Также здесь лежат мои дипломные работы. На всякий
+                    случай, вот ещё раз ссылка: </p>
+                <a href="https://github.com/Imferal" class="note__link">GitHub</a>
             </div>
-            <!-- </div> -->
-        </section>
+        </div>
+        <!-- </div> -->
+    </section>
 
-        <section id="about" aria-label="Обо мне">
-            <!-- <div class="fixed-container"> -->
-            <div class="container-light">
-                <div class="section__header-container fixed-container">
-                    <h2 class="section__header">Обо мне</h2>
-                    <div class="header-line section__header-line"></div>
+    <section id="about" aria-label="Обо мне">
+        <div class="container-light">
+            <div class="section__header-container fixed-container">
+                <h2 class="section__header">Обо мне</h2>
+                <div class="header-line section__header-line"></div>
+            </div>
 
-                </div>
-                <article class="common__text-article">
-                    <h3 class="fixed-container section__subheader">Чем занимаюсь, что ищу</h3>
-                    <p class="regular__paragraph fixed-container">В настоящий момент учусь на веб-разработчика
-                        (онлайн-университет <a href="https://go.acstat.com/c4aab9500156bab7"
-                            class="regular__link">Skillbox</a>),
-                        приоритетно
-                        рассмотриваю вакансии на Junior Front-End Developer,
-                        либо с возможностью совмещения с функциями маркетолога/руководителя проектов. По конкретным
-                        условиям ничего не могу сказать, времена смутные, предлагайте.</p>
-                    <p class="regular__paragraph fixed-container">В апреле защитился по вёрстке. Проект на HTML + CSS +
-                        jQuery. Впереди ещё две защиты. Сейчас заканчиваю курс по JavaScript, уже приступил к дипломной
-                        работе, затем будет PHP.
-                    </p>
+            <article class="common__text-article">
+                <h3 class="fixed-container section__subheader">Чем занимаюсь, что ищу</h3>
+                <p class="regular__paragraph fixed-container">В настоящий момент учусь на веб-разработчика
+                    (онлайн-университет <a href="https://go.acstat.com/c4aab9500156bab7"
+                                           class="regular__link">Skillbox</a>),
+                    приоритетно
+                    рассмотриваю вакансии на Junior Front-End Developer,
+                    либо с возможностью совмещения с функциями маркетолога/руководителя проектов. По конкретным
+                    условиям ничего не могу сказать, времена смутные, предлагайте.</p>
+                <p class="regular__paragraph fixed-container">В апреле 2020 года защитился по вёрстке (HTML5, CSS,
+                    jQuery):</p>
+                <img src="img/Diplom1.png" alt="" class="screenshot__img fixed-container">
+                <p class="regular__paragraph fixed-container">В ноябре 2020 года - по JavaScript (React + Redux).
+                </p>
+                <img src="img/Diplom2.png" alt="" class="screenshot__img fixed-container">
+                <p class="regular__paragraph fixed-container">Остался последний диплом по PHP.</p>
+            </article>
 
-                    <img src="img/Diplom.jpg" alt="" class="screenshot__img fixed-container">
+            <article class="common__text-article">
+                <h3 class="fixed-container section__subheader">Почему Junior в 39 лет.</h3>
+                <p class="regular__paragraph fixed-container">С компьютерами познакомился во втором классе, ходил в
+                    кружок по информатике, учил бейсик на 286-м. Чуть позже дома появился ZX Spectrum, я был
+                    поглощён идеей написать свою собственную игру, изучал уже спектрумовский бейсик и ассемблер.</p>
+                <p class="regular__paragraph fixed-container">Помню, как писал на ассемблере "подпрограмму",
+                    которая делала только одно - очищала экран.
+                    Полтора десятка ассемблерных строк занимали меньше памяти, чем команда на бейсике
+                    из трёх букв "CLS". И это было важно - каждый байт был на счету!</p>
+                <p class="regular__paragraph fixed-container">Однако в
+                    детстве случилось странное - я решил, что являюсь гуманитарием, и технические знания не для
+                    меня.</p>
+                <p class="regular__paragraph fixed-container">Хотя всё говорило об обратном. :) К примеру, уже с
+                    2002 года на домашнем компьютере установлен Linux,
+                    мой первый дистрибутив - Red Hat 6.2. В последние 5-6 лет Linux Mint окончательно вытеснил
+                    Windows. В течение нескольких лет я даже использовал FreeBSD в
+                    качестве домашней системы - в целом норм, но всякий раз чего-то не хватало, чтобы отказаться от
+                    других ОС.</p>
+                <p class="regular__paragraph fixed-container">Год назад мой товарищ увлёк меня идеей записаться на
+                    курсы по программированию. Я решил попробовать и теперь, наконец, понял, чем хочу заниматься в
+                    этой жизни. :) </p>
+            </article>
 
-                </article>
+            <article class="common__text-article">
+                <h3 class="fixed-container section__subheader">Ближайшие планы</h3>
+                <p class="regular__paragraph fixed-container">
+                    Сейчас, параллельно с курсом по PHP, планирую заняться углублённым изучением React JS и
+                    ванильного JavaScript, разобраться в архитектуре языка, понять, как это всё работает. В целом
+                    хочу не зависать на вёрстке сайтов, а двигаться в сторону SPA и в ближайшем будущем React
+                    Native, изучить, хотя бы на базовом
+                    уровне, NodeJS, понять, как на JavaScript пишут полноценные приложения, в том числе под
+                    мобильные устройства.</p>
+            </article>
 
+            <article class="common__text-article">
+                <h3 class="fixed-container section__subheader">Подводя итог</h3>
+                <p class="regular__paragraph fixed-container">
+                    Программирование по-настоящему зацепило, в дальнейшем буду двигаться исключительно в этом
+                    направлении.
+                    Знания в области маркетинга и ведения проектов помогают мне смотреть на разработку глазами
+                    заказчика, как внутреннего, так и внешнего, и в то же время писать код, который, я уверен,
+                    понравится поисковым системам.</p>
+                <p class="regular__paragraph fixed-container">
+                    Сейчас нужна практика, поэтому открыт для любых (в разумных
+                    пределах) предложений. Тем не менее, я нормальный человек, поэтому хотелось бы, конечно, сразу
+                    найти интересную постоянную работу с полной занятостью и сосредоточиться на
+                    программировании, а не на поиске очередного временного проекта.</p>
+            </article>
 
+            <article class="common__text-article">
+                <h3 class="fixed-container section__subheader">Контакты</h3>
+                <p class="regular__paragraph fixed-container">
+                    Живу в Санкт-Петербурге, в районе метро Удельная.
+                </p>
+            </article>
 
-
-
-                <article class="common__text-article">
-                    <h3 class="fixed-container section__subheader">Почему Junior в 39 лет.</h3>
-                    <p class="regular__paragraph fixed-container">С компьютерами познакомился во втором классе, ходил в
-                        кружок по информатике, учил бейсик на 286-м. Чуть позже дома появился ZX Spectrum, я был
-                        поглощён идеей написать свою собственную игру, изучал уже спектрумовский бейсик и ассемблер.</p>
-                    <p class="regular__paragraph fixed-container">Помню, как писал на ассемблере "подпрограмму",
-                        которая делала только одно - очищала экран.
-                        Полтора десятка ассемблерных строк занимали меньше памяти, чем команда на бейсике
-                        из трёх букв "CLS". И это было важно - каждый байт был на счету!</p>
-                    <p class="regular__paragraph fixed-container">Однако в
-                        детстве я решил, что являюсь гуманитарием, и технические знания не для меня.</p>
-                    <p class="regular__paragraph fixed-container">С 2002 года на домашнем компьютере установлен Linux,
-                        мой первый дистрибутив - Red Hat 6.2. В последние 5-6 лет Linux Mint окончательно вытеснил
-                        Windows. Как ни странно, но в течение нескольких лет я даже пытался использовать FreeBSD в
-                        качестве домашней системы - в целом норм, но всякий раз чего-то не хватало, чтобы отказаться от
-                        других ОС.</p>
-                    <p class="regular__paragraph fixed-container">Год назад мой товарищ увлёк меня идеей записаться на
-                        курсы по программированию. Я решил попробовать и теперь, наконец, понял, чем хочу заниматься в
-                        этой жизни. :) </p>
-                </article>
-
-                <article class="common__text-article">
-                    <h3 class="fixed-container section__subheader">Ближайшие планы</h3>
-                    <p class="regular__paragraph fixed-container">
-                        Сейчас, параллельно с курсом по PHP, планирую заняться углублённым изучением React JS и
-                        ванильного JavaScript, разобраться в архитектуре языка, понять, как это всё работает. В целом
-                        хочу не зависать на вёрстке сайтов, а двигаться в сторону SPA, изучить, хотя бы на базовом
-                        уровне, NodeJS, понять, как на JavaScript пишут полноценные приложения, в том числе под
-                        мобильные устройства. В целях обучения начну какой-нибудь собственный простенький проект, есть
-                        пара идей, осталось найти время. Всё будет на гитхабе.</p>
-                </article>
-
-                <article class="common__text-article">
-                    <h3 class="fixed-container section__subheader">Что в итоге</h3>
-                    <p class="regular__paragraph fixed-container">
-                        Программирование по-настоящему зацепило, в дальнейшем буду двигаться именно в этом направлении.
-                        Знания в области маркетинга и ведения проектов помогают мне смотреть на разработку глазами
-                        заказчика, как внутреннего, так и внешнего, и в то же время писать код, который, я уверен,
-                        понравится поисковым системам. Сейчас нужна практика, поэтому открыт для любых (в разумных
-                        пределах) предложений. Тем не менее, я нормальный человек, поэтому хотелось бы, конечно, сразу
-                        найти интересную постоянную работу с полной занятостью и сосредоточиться на
-                        программировании, а не на поиске очередного временного проекта.</p>
-                </article>
-
-                <article class="common__text-article">
-                    <h3 class="fixed-container section__subheader">Контакты</h3>
-                    <p class="regular__paragraph fixed-container">
-                        Живу в Санкт-Петербурге, в районе метро Удельная.
-                    </p>
-                </article>
-
-                <div class="about__map fixed-container">
-                    <iframe
+            <div class="about__map fixed-container">
+                <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1993.797834114367!2d30.312085916371515!3d60.01842638190535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963465b4cb89bb%3A0xb46f13a88035e566!2z0YHRgi4g0LwuINCj0LTQtdC70YzQvdCw0Y8!5e0!3m2!1sru!2sru!4v1594408446551!5m2!1sru!2sru"
                         class="google-maps"></iframe>
-                </div>
-
-                <p class="regular__paragraph fixed-container">
-                    Для связи со мной лучше всего использовать форму на сайте - я получу уведомление и быстро отвечу.
-                    Либо просто звонить +7 964 323 11 10.</p>
-                <p class="regular__paragraph fixed-container">Также можно писать мне в Telegram или Whatsapp по тому же
-                    номеру.</p>
-                <p class="regular__paragraph fixed-container">Самый медленный, но всё равно верный способ выйти со мной
-                    на связь - написать мне на почту:
-                    smirnovvihome@gmail.com.
             </div>
-            <!-- </div> -->
-        </section>
 
-        <!-- Форма обратной связи -->
-        <div id="form" class="form">
+            <p class="regular__paragraph fixed-container">
+                Для связи со мной можно использовать форму на сайте - я получу уведомление и быстро отвечу.
+                Либо просто звонить +7 964 323 11 10.</p>
+            <p class="regular__paragraph fixed-container">Также можно писать мне в Telegram (самый быстрый и
+                надёжный способ связи).</p>
+            <p class="regular__paragraph fixed-container">Самый медленный, но всё равно верный способ выйти со мной
+                на связь - по-старинке написать мне на почту:
+                smirnovvihome@gmail.com.
+        </div>
+    </section>
 
-            <div class="form__wave form__wave1"></div>
-            <div class="form__wave form__wave2"></div>
-            <div class="fixed-container">
-                <form action="mail.php" enctype="multipart/form-data" class="form__container popup__container"
-                    method="POST">
-                    <fieldset class="form__fieldset">
-                        <legend class="form__title form__title_indent">Форма для связи</legend>
-                        <p class="form__description">Присылайте вакансии и тестовые задания или сразу сделайте
-                            предложение о работе, от которого я не смогу отказаться. :) Также буду рад советам о том,
-                            как сделать этот сайт лучше.</p>
-
-                        <label class="form__label form__label_indent required-input" for="userName">Как вас
-                            зовут?</label>
-                        <input id="userName" class="form__input form__input_margin js-first-input" name="userName"
-                            type="text" maxlength="50">
-
-                        <label class="form__label form__label_indent required-input" for="email">Телефон или
-                            email</label>
-                        <input id="email" class="form__input form__input_margin" name="userContacts">
-
-                        <label class="form__label form__label_indent flex-grow1" for="userMessage">Сообщение для
-                            меня</label>
-                        <textarea id="userMessage" class="form__input form__textarea form__input_margin"
-                            name="userMessage"></textarea>
-
-
-                        <!--                     
-                <label class="form__label_file">
-
-                    <input type="file" name="userAttachment" class="inputfile" id="userAttachment"
-                        data-multiple-caption="{count} files selected" multiple="">
-                    <i class="fas fa-upload"></i>
-                    <span class="form__file_span">Добавить файл</span>
-                </label> -->
-
-                        <button class="btn btn_bubble_sky btn_indent" id="submit-form" type="submit">Отправить</button>
-
-                        <label class="form__label_checkbox form__label_checkbox_container">
-                            <input type="checkbox" checked name="terms" required>
-                            <div class="checkmark"></div>
-
-                            <span>Я соглашаюсь на обработку моих персональных данных в соответствии с
+    <!-- Форма обратной связи -->
+    <div id="form" class="form">
+        <div class="form__wave form__wave1"></div>
+        <div class="form__wave form__wave2"></div>
+        <div class="fixed-container">
+            <form action="mail.php" enctype="multipart/form-data" class="form__container popup__container"
+                  method="POST">
+                <fieldset class="form__fieldset">
+                    <legend class="form__title form__title_indent">Форма для связи</legend>
+                    <p class="form__description">Присылайте вакансии и тестовые задания или сразу сделайте
+                        предложение о работе, от которого я не смогу отказаться. :) Также буду рад советам о том,
+                        как сделать этот сайт лучше.</p>
+                    <label class="form__label form__label_indent required-input" for="userName">Как вас
+                        зовут?</label>
+                    <input id="userName" class="form__input form__input_margin js-first-input" name="userName"
+                           type="text" maxlength="50">
+                    <label class="form__label form__label_indent required-input" for="email">Телефон или
+                        email</label>
+                    <input id="email" class="form__input form__input_margin" name="userContacts">
+                    <label class="form__label form__label_indent flex-grow1" for="userMessage">Сообщение для
+                        меня</label>
+                    <textarea id="userMessage" class="form__input form__textarea form__input_margin"
+                              name="userMessage"></textarea>
+                    <button class="btn btn_bubble_sky btn_indent" id="submit-form" type="submit">Отправить</button>
+                    <label class="form__label_checkbox form__label_checkbox_container">
+                        <input type="checkbox" checked name="terms" required>
+                        <div class="checkmark"></div>
+                        <span>Я соглашаюсь на обработку моих персональных данных в соответствии с
                                 <a class="form__link" href="policy.html" id="last-element">условиями</a>
                             </span>
-                        </label>
-
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <div class="footer__wrapper fixed-container">
-            <div class="footer__left">
-                <a href="https://github.com/Imferal" class="footer__link">GitHub</a>
-                <a href="https://spb.hh.ru/resume/a254d3f4ff07d662620039ed1f395439506133" class="footer__link">hh.ru</a>
-                <a href="https://go.acstat.com/c4aab9500156bab7" class="footer__link">Skillbox</a>
-            </div>
-
-            <div class="footer__right">
-                <div class="footer__year">Владимир Смирнов, 2020</div>
-                <a href="mailto:smirnovvihome@gmail.com" class="footer__link">smirnovvihome@gmail.com</a>
-                <div class="footer__phone">+7 (964) 323 11 10</div>
-
-            </div>
-        </div>
-    </footer>
-    <div id="backPop">
-        <div id="popUp">
-            <img id="bigImg" alt="Увеличенное изображение" src="#">
+                    </label>
+                </fieldset>
+            </form>
         </div>
     </div>
-    <!-- <script src="build/bundle.js"></script> -->
-    <script src="build/main.js"></script>
-    <script src="build/vendors~main.js"></script>
-</body>
+</main>
 
+<footer>
+    <div class="footer__wrapper fixed-container">
+        <div class="footer__left">
+            <a href="https://github.com/Imferal" class="footer__link">Дипломная работа на ReactJS</a>
+            <a href="https://github.com/Imferal" class="footer__link">GitHub</a>
+            <a href="https://spb.hh.ru/resume/a254d3f4ff07d662620039ed1f395439506133" class="footer__link">hh.ru</a>
+            <a href="https://go.acstat.com/c4aab9500156bab7" class="footer__link">Skillbox</a>
+        </div>
+        <div class="footer__right">
+            <div class="footer__phone">+7 (964) 323 11 10</div>
+            <a href="mailto:smirnovvihome@gmail.com" class="footer__link">smirnovvihome@gmail.com</a>
+            <div class="footer__year">Владимир Смирнов, 2020</div>
+        </div>
+    </div>
+</footer>
+<div id="backPop">
+    <div id="popUp">
+        <img id="bigImg" alt="Увеличенное изображение" src="#">
+    </div>
+</div>
+<script src="build/main.js"></script>
+<script src="build/vendors~main.js"></script>
+</body>
 </html>

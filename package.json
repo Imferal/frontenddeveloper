@@ -28,6 +28,7 @@
     "file-loader": "^6.0.0",
     "jquery": "^3.5.1",
     "jquery-validation": "^1.19.2",
+    "react-router-dom": "^5.2.0",
     "style-loader": "^1.2.1",
     "swiper": "^6.0.2",
     "websocket-extensions": "^0.1.4"
