@@ -30,7 +30,7 @@
     "jquery-validation": "^1.19.4",
     "react-router-dom": "^5.2.0",
     "style-loader": "^1.2.1",
-    "swiper": "^6.0.2",
+    "swiper": "^6.5.1",
     "websocket-extensions": "^0.1.4"
   },
   "keywords": [
